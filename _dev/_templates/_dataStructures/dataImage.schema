@@ -1,0 +1,25 @@
+{
+	"id": "/dataImage",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"src": {
+			"type": "string"
+		},
+		"alt": {
+			"type": "string"
+		},
+		"height": {
+			"type": "integer"
+		},
+		"width": {
+			"type": "integer"
+		},
+		"extension": {
+			"type": "string"
+		},
+		"centrePointXY": {
+			"type": "string"
+		}
+	}
+}
