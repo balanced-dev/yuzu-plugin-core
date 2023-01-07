@@ -1,5 +1,3 @@
-const fs = require('fs');
-const path = require('path');
 const utils = require('./_dev/_source/js/utils');
 
 module.exports = {
@@ -10,7 +8,7 @@ module.exports = {
     initForYuzuApi: (config) => {
         config.api.files.templates.push('./node_modules/yuzu-plugin-core/_dev/_templates');
     }, 
-    postInstallManageFiles: (files) => {
+    postInstallManageFiles: (fs, path, files) => {
 
         files.forEach((file) => {
             if(fs.existsSync('../../package.json')) {
