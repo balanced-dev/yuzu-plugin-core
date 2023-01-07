@@ -1,3 +1,5 @@
+const fs = require('fs');
+const path = require('path');
 const utils = require('./_dev/_source/js/utils');
 
 module.exports = {
